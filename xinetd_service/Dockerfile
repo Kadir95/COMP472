@@ -1,6 +1,8 @@
 FROM ubuntu:16.04
-RUN apt-get update && apt-get -y dist-upgrade && \
-    apt-get -y install --no-install-recommends tcpd xinetd && \
+RUN apt-get update
+RUN DEBIAN_FRONTED=noninteractive apt-get install -y --no-install-recommends apt-utils && \
+    apt-get -y dist-upgrade && \
+    apt-get -y install tcpd xinetd && \
     apt-get clean && \
-RUN useradd -u 8888 -m pwn
-COPY App /App
+ADD idle.py /App/idle.py
+RUN python /App/idle.py
