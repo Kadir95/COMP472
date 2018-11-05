@@ -1,7 +1,11 @@
 service unicornfts {
-    disable     = no
-    socket_type = stream
-    protocol    = tcp
-    port        = 8181
-    server      = /App/unicornfts_server.py
+    disable         = no
+    socket_type     = stream
+    protocol        = tcp
+    port            = 8181
+    user            = root
+    flag            = REUSE
+    server          = /App/unicornfts_server.py
+    log_on_failure += USERID
+    log_on_success += PID HOST EXIT
 }
