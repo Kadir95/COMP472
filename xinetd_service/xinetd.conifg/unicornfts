@@ -1,0 +1,7 @@
+service unicornfts {
+    disable     = no
+    socket_type = stream
+    protocol    = tcp
+    port        = 8181
+    server      = /App/unicornfts_server.py
+}
