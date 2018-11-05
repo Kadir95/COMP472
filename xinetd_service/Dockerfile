@@ -4,9 +4,10 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends tcpd xinetd python nano lsof && \
     apt-get clean
 ADD App/ /App/
-ENTRYPOINT xinetd -stayalive && \
-    echo "unicornfts    8181/tcp" >> /etc/services && \
-    /etc/init.d/xinetd restart && \
-    python /App/idle.py
 # Add unicorn fts service config
 ADD xinetd.conifg/unicornfts /etc/xinetd.d/
+CMD xinetd -dontfork
+EXPOSE 8181
+ENTRYPOINT echo "unicornfts    8181/tcp" >> /etc/services && \
+    /etc/init.d/xinetd restart && \
+    python /App/idle.py
