@@ -1,3 +1,3 @@
 # build container and run
 sudo docker build -t unicornfts -f Dockerfile .
-sudo docker run --net=host unicornfts &
+sudo docker run -p 8181:8181 unicornfts &
