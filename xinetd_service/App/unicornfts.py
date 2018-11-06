@@ -73,20 +73,28 @@ def put():
     }
 
     request_pickle = pickle.dumps(request, pickle.HIGHEST_PROTOCOL)
+    log.info("put_check request pickle ready")
 
     s_socket.send(request_pickle)
+    log.info("put_check request pickle send")
 
-    transmission_check_pickle = s_socket.recv(4096)
+    transmission_check_pickle = b""
+    while True:
+        data = s_socket.recv(4096)
+        if not data:
+            break
+        transmission_check_pickle += data
+    print(transmission_check_pickle)
     try:
         transmission_check = pickle.loads(transmission_check_pickle)
     except pickle.UnpicklingError as err:
-        log.error("Unpickling Error " + err)
-        print("An error occur!")
+        log.error("Unpickling Error")
+        print("An error occur!", err)
         sys.exit(0)
 
     if transmission_check["send"] != "OK":
-        log.info("File already exists")
-        print("This file already exists")
+        log.info(transmission_check["message_log"])
+        print(transmission_check["message"])
         sys.exit(0)
     
     with open(sys.argv[2], "rb") as binary_file:
@@ -118,7 +126,6 @@ def put():
         log.error("data transfer complete with error")
         print(transmission_check["message"])
 
-
 def get():
     log.info("Get operation starts")
     s_socket = create_socket()
@@ -139,12 +146,32 @@ def delete():
 
 def list_files():
     log.info("List operation starts")
-    s_socket = create_socket()
-    s_socket.send(str.encode("list\n"))
 
-    data = s_socket.recv(1024).decode()
-    print("Rec:", data)
-    pass
+    request = {
+        "op"        : "list",
+        "username"  : getpass.getuser()
+    }
+    request_pickle = pickle.dumps(request, pickle.HIGHEST_PROTOCOL)
+
+    s_socket = create_socket()
+    s_socket.send(request_pickle)
+
+
+    response_pickle = b''
+    while True:
+        data = s_socket.recv(4096)
+        if not data:
+            break
+        response_pickle += data
+    
+    response = pickle.loads(request_pickle)
+
+    if response["success"] == "yes":
+        log.debug(response["message_log"])
+        print(response["message"])
+    else:
+        log.error(response["message_log"])
+        print(response["message"])
 
 if len(sys.argv) > 1 and sys.argv[1].lower() in op_list:
     operation = sys.argv[1].lower()
