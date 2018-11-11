@@ -28,6 +28,11 @@ log.addHandler(log_fh)
 
 log.info("Init Message")
 
+def send_message(message):
+        reply_pickle = pickle.dumps(message, pickle.HIGHEST_PROTOCOL)
+        sys.stdout.buffer.write(reply_pickle)
+        sys.stdout.flush()
+
 def md5(fname):
     hash_md5 = hashlib.md5()
     with open(fname, "rb") as f:
@@ -35,9 +40,46 @@ def md5(fname):
             hash_md5.update(chunk)
     return hash_md5.hexdigest()
 
-def put(data):
-        pass
+def md5v(data):
+        hash = hashlib.md5()
+        hash.update(data)
+        return hash.hexdigest()
 
+def put(data):
+        log.info("put function starts")
+        user_path = path + data["username"] + "/"
+        file_path = user_path + data["filename"]
+
+        log.debug("data size : " + str(len(data["file"])/1024))
+        with open(file_path, "wb") as file:
+                file.write(data["file"])
+                file.close()
+        
+        if md5(file_path) != data["md5"]:
+                log.info("files md5 doesn't mach")
+                os.remove(user_path + data["filename"])
+                reply = {
+                        "success"       : "no",
+                        "message"       : "MD5s didn't mach",
+                        "message_log"   : "MD5s didn't mach"
+                }
+                reply_pickle = pickle.dumps(reply, pickle.HIGHEST_PROTOCOL)
+                sys.stdout.buffer.write(reply_pickle)
+                sys.stdout.flush()
+                return
+
+        log.info("file write")
+
+        reply = {
+                "success"       : "yes",
+                "message"       : "File successfully trasfered",
+                "message_log"   : "File successfully trasfered"
+        }
+        reply_pickle = pickle.dumps(reply, pickle.HIGHEST_PROTOCOL)
+        sys.stdout.buffer.write(reply_pickle)
+        sys.stdout.flush()
+        return
+        
 def put_check(data):
         log.debug("put_check username: " + data["username"])
         if not os.path.isdir(path + data["username"]):
@@ -76,12 +118,57 @@ def put_check(data):
         reply_pickle = pickle.dumps(reply, pickle.HIGHEST_PROTOCOL)
         sys.stdout.buffer.write(reply_pickle)
         sys.stdout.flush()
+        return
         
 def get(data):
         pass
 
 def delete(data):
-        pass
+        log.info("Del oprateion starts")
+        
+        user_path = pathlib.Path(path + data["username"] + "/")
+        file_path = pathlib.Path(user_path + data["filename"])  
+        log.debug("File path : %s", file_path.absolute())
+
+        if not os.path.isfile(file_path.absolute()):
+                log.info("File doesn't exists")
+                reply = {
+                        "success"       : "no",
+                        "message_log"   : "File couldn't find",
+                        "message"       : file_path.name + " couldn't find"
+                }
+                send_message(reply)
+                return
+        
+        if data["filesize"] != os.stat(file_path.absolute()).st_size:
+                log.info("File sizes doesn't match")
+                reply = {
+                        "success"       : "no",
+                        "message_log"   : "File sizes don't mach",
+                        "message"       : file_path.name + " sizes don't mach"
+                }
+                send_message(reply)
+                return
+
+        if md5(file_path.absolute()) != data["md5"]:
+                log.info("File md5s doesn't match")
+                reply = {
+                        "success"       : "no",
+                        "message_log"   : "File md5s don't mach",
+                        "message"       : file_path.name + " md5s don't mach"
+                }
+                send_message(reply)
+                return
+
+        os.remove(file_path.absolute())
+        log.info("File is deleted successfully")
+        reply = {
+                "success"       : "yes",
+                "message_log"   : "File deleted succesfully",
+                "message"       : file_path.name + " deleted succesfully"
+        }
+        send_message(reply)
+        log.info("Message is send")
 
 def list_files(data):
         log.info("list file function started")

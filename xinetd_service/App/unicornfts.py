@@ -12,6 +12,7 @@ import pickle
 import os
 import getpass
 import hashlib
+import pathlib
 
 op_list = ["put", "get", "del", "list"]
 port = 8080
@@ -62,11 +63,7 @@ def get_message(s_socket):
             log.debug("Data transmission end")
             break
     
-    s_socket.close()
-
     transmission_check_pickle = b''.join(transmission_check_pickle)
-
-    print(transmission_check_pickle)
 
     try:
         transmission_check = pickle.loads(transmission_check_pickle)
@@ -74,7 +71,9 @@ def get_message(s_socket):
         log.error("Unpickling Error")
         print("An error occur!", err)
         sys.exit(0)
-    
+
+    s_socket.close()
+
     return transmission_check
 
 def create_socket():
@@ -116,8 +115,6 @@ def put():
     }
 
     send_message(s_socket, request)
-    s_socket = create_socket()
-
     transmission_check = get_message(s_socket)
 
     if transmission_check["send"] != "OK":
@@ -133,11 +130,12 @@ def put():
     request = {
         "op"        : "put",
         "username"  : getpass.getuser(),
-        "filename"  : os.path.splitext(sys.argv[2])[0],
+        "filename"  : pathlib.Path(sys.argv[2]).name,
         "md5"       : md5(sys.argv[2]),
         "file"      : data
     }
     
+    s_socket = create_socket()
     send_message(s_socket, request)
     
     transmission_check = get_message(s_socket)
@@ -160,12 +158,34 @@ def get():
 
 def delete():
     log.info("Del operation starts")
-    s_socket = create_socket()
-    s_socket.send(str.encode("del\n"))
+    
+    file_path = pathlib.Path(sys.argv[2])
 
-    data = s_socket.recv(1024).decode()
-    print("Rec:", data)
-    pass
+    # Client has to have the file locally
+    if not os.path.isfile(file_path.absolute()):
+        log.info("File isn't found locally <Operation Reject>")
+        print("File doesn't exist on local")
+        sys.exit(0)
+    
+    request = {
+        "op"            : "del",
+        "username"      : getpass.getuser(),
+        "filename"      : pathlib.Path(sys.argv[2]).name,
+        "filesize"      : os.stat(file_path.absolute()).st_size,
+        "md5"           : md5(file_path.absolute())
+    }
+
+    s_socket = create_socket()
+    send_message(s_socket, request)
+
+    server_reply = get_message(s_socket)
+
+    if server_reply["success"] == "yes":
+        log.info("Del operation ended successfully")
+        print("File", file_path.name, "is deleted")
+    else:
+        log.warning("Del operation ended with faliure <server message : %s>", server_reply["message_log"])
+        print(server_reply["message"])
 
 def list_files():
     log.info("List operation starts")
