@@ -1,9 +1,485 @@
-2018-11-06 07:01:23,577 - client__main__ - WARNING - User arguments insufficient
-2018-11-06 07:28:01,765 - client__main__ - ERROR - Unpickling Error
-2018-11-06 07:33:30,007 - client__main__ - ERROR - Unpickling Error
-2018-11-06 07:46:36,319 - client__main__ - ERROR - Unpickling Error
-2018-11-06 07:47:19,907 - client__main__ - ERROR - Unpickling Error
-2018-11-06 07:50:30,974 - client__main__ - ERROR - Unpickling Error
-2018-11-06 07:50:51,074 - client__main__ - ERROR - Unpickling Error
-2018-11-06 07:51:04,909 - client__main__ - ERROR - Unpickling Error
-2018-11-06 07:54:14,029 - client__main__ - ERROR - Unpickling Error
+2018-11-11 16:34:07,797 - client__main__ - INFO - Init Message
+2018-11-11 16:34:07,797 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 16:34:07,797 - client__main__ - INFO - List operation starts
+2018-11-11 16:34:07,797 - client__main__ - DEBUG - socket successfully created
+2018-11-11 16:34:07,797 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 16:34:07,798 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 16:34:07,798 - client__main__ - INFO - put_check request pickle send
+2018-11-11 16:42:26,024 - client__main__ - INFO - Init Message
+2018-11-11 16:42:26,024 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 16:42:26,024 - client__main__ - INFO - List operation starts
+2018-11-11 16:42:26,024 - client__main__ - DEBUG - socket successfully created
+2018-11-11 16:42:26,025 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 16:42:26,025 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 16:42:26,025 - client__main__ - INFO - put_check request pickle send
+2018-11-11 16:43:30,474 - client__main__ - INFO - Init Message
+2018-11-11 16:43:30,474 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 16:43:30,474 - client__main__ - INFO - List operation starts
+2018-11-11 16:43:30,474 - client__main__ - DEBUG - socket successfully created
+2018-11-11 16:43:30,475 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 16:43:30,475 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 16:43:30,475 - client__main__ - INFO - put_check request pickle send
+2018-11-11 16:44:30,947 - client__main__ - INFO - Init Message
+2018-11-11 16:44:30,948 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 16:44:30,948 - client__main__ - INFO - List operation starts
+2018-11-11 16:44:30,948 - client__main__ - DEBUG - socket successfully created
+2018-11-11 16:44:30,948 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 16:44:30,948 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 16:44:30,948 - client__main__ - INFO - put_check request pickle send
+2018-11-11 16:49:37,691 - client__main__ - INFO - Init Message
+2018-11-11 16:49:37,692 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 16:49:37,692 - client__main__ - INFO - List operation starts
+2018-11-11 16:49:37,692 - client__main__ - DEBUG - socket successfully created
+2018-11-11 16:49:37,692 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 16:49:37,692 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 16:49:37,692 - client__main__ - INFO - put_check request pickle send
+2018-11-11 17:21:44,977 - client__main__ - INFO - Init Message
+2018-11-11 17:21:44,977 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 17:21:44,977 - client__main__ - INFO - List operation starts
+2018-11-11 17:21:44,977 - client__main__ - DEBUG - socket successfully created
+2018-11-11 17:21:44,978 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 17:21:44,978 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 17:21:44,978 - client__main__ - INFO - put_check request pickle send
+2018-11-11 17:33:10,228 - client__main__ - INFO - Init Message
+2018-11-11 17:33:10,228 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 17:33:10,228 - client__main__ - INFO - List operation starts
+2018-11-11 17:33:10,228 - client__main__ - DEBUG - socket successfully created
+2018-11-11 17:33:10,229 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 17:33:10,229 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 17:33:10,229 - client__main__ - INFO - put_check request pickle send
+2018-11-11 17:33:24,058 - client__main__ - INFO - Init Message
+2018-11-11 17:33:24,058 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 17:33:24,058 - client__main__ - INFO - List operation starts
+2018-11-11 17:33:24,058 - client__main__ - DEBUG - socket successfully created
+2018-11-11 17:33:24,059 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 17:33:24,059 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 17:33:24,059 - client__main__ - INFO - put_check request pickle send
+2018-11-11 17:40:23,000 - client__main__ - INFO - Init Message
+2018-11-11 17:40:23,000 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 17:40:23,000 - client__main__ - INFO - List operation starts
+2018-11-11 17:40:23,000 - client__main__ - DEBUG - socket successfully created
+2018-11-11 17:40:23,000 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 17:40:23,001 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 17:40:23,001 - client__main__ - INFO - put_check request pickle send
+2018-11-11 17:41:13,308 - client__main__ - INFO - Init Message
+2018-11-11 17:41:13,308 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 17:41:13,308 - client__main__ - INFO - List operation starts
+2018-11-11 17:41:13,308 - client__main__ - DEBUG - socket successfully created
+2018-11-11 17:41:13,308 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 17:41:13,308 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 17:41:13,308 - client__main__ - INFO - put_check request pickle send
+2018-11-11 17:44:46,796 - client__main__ - INFO - Init Message
+2018-11-11 17:44:46,796 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 17:44:46,796 - client__main__ - INFO - List operation starts
+2018-11-11 17:44:46,796 - client__main__ - DEBUG - socket successfully created
+2018-11-11 17:44:46,797 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 17:44:46,797 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 17:44:46,797 - client__main__ - INFO - put_check request pickle send
+2018-11-11 17:45:16,820 - client__main__ - INFO - Init Message
+2018-11-11 17:45:16,820 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 17:45:16,820 - client__main__ - INFO - List operation starts
+2018-11-11 17:45:16,821 - client__main__ - DEBUG - socket successfully created
+2018-11-11 17:45:16,821 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 17:45:16,821 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 17:45:16,821 - client__main__ - INFO - put_check request pickle send
+2018-11-11 17:47:07,741 - client__main__ - INFO - Init Message
+2018-11-11 17:47:07,742 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 17:47:07,742 - client__main__ - INFO - List operation starts
+2018-11-11 17:47:07,742 - client__main__ - DEBUG - socket successfully created
+2018-11-11 17:47:07,742 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 17:47:07,742 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 17:47:07,742 - client__main__ - INFO - put_check request pickle send
+2018-11-11 17:51:12,948 - client__main__ - INFO - Init Message
+2018-11-11 17:51:12,948 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 17:51:12,948 - client__main__ - INFO - List operation starts
+2018-11-11 17:51:12,948 - client__main__ - DEBUG - socket successfully created
+2018-11-11 17:51:12,949 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 17:51:12,949 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 17:51:12,949 - client__main__ - INFO - put_check request pickle send
+2018-11-11 17:51:43,067 - client__main__ - INFO - Init Message
+2018-11-11 17:51:43,067 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 17:51:43,067 - client__main__ - INFO - List operation starts
+2018-11-11 17:51:43,067 - client__main__ - DEBUG - socket successfully created
+2018-11-11 17:51:43,067 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 17:51:43,068 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 17:51:43,068 - client__main__ - INFO - put_check request pickle send
+2018-11-11 17:53:26,025 - client__main__ - INFO - Init Message
+2018-11-11 17:53:26,025 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 17:53:26,025 - client__main__ - INFO - List operation starts
+2018-11-11 17:53:26,025 - client__main__ - DEBUG - socket successfully created
+2018-11-11 17:53:26,026 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 17:53:26,026 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 17:53:26,026 - client__main__ - INFO - put_check request pickle send
+2018-11-11 17:55:45,181 - client__main__ - INFO - Init Message
+2018-11-11 17:55:45,181 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 17:55:45,181 - client__main__ - INFO - List operation starts
+2018-11-11 17:55:45,181 - client__main__ - DEBUG - socket successfully created
+2018-11-11 17:55:45,182 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 17:55:45,182 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 17:55:45,182 - client__main__ - INFO - put_check request pickle send
+2018-11-11 17:56:18,812 - client__main__ - INFO - Init Message
+2018-11-11 17:56:18,812 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 17:56:18,812 - client__main__ - INFO - List operation starts
+2018-11-11 17:56:18,812 - client__main__ - DEBUG - socket successfully created
+2018-11-11 17:56:18,812 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 17:56:18,813 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 17:56:18,813 - client__main__ - INFO - put_check request pickle send
+2018-11-11 17:59:41,771 - client__main__ - INFO - Init Message
+2018-11-11 17:59:41,771 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 17:59:41,771 - client__main__ - INFO - List operation starts
+2018-11-11 17:59:41,771 - client__main__ - DEBUG - socket successfully created
+2018-11-11 17:59:41,772 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 17:59:41,772 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 17:59:41,772 - client__main__ - INFO - put_check request pickle send
+2018-11-11 18:01:05,105 - client__main__ - INFO - Init Message
+2018-11-11 18:01:05,106 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:01:05,106 - client__main__ - INFO - List operation starts
+2018-11-11 18:01:05,106 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:01:05,106 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:01:05,106 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 18:01:05,106 - client__main__ - INFO - put_check request pickle send
+2018-11-11 18:01:26,756 - client__main__ - INFO - Init Message
+2018-11-11 18:01:26,756 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:01:26,756 - client__main__ - INFO - List operation starts
+2018-11-11 18:01:26,756 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:01:26,756 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:01:26,757 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 18:01:26,757 - client__main__ - INFO - put_check request pickle send
+2018-11-11 18:03:05,211 - client__main__ - INFO - Init Message
+2018-11-11 18:03:05,211 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:03:05,211 - client__main__ - INFO - List operation starts
+2018-11-11 18:03:05,211 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:03:05,211 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:03:05,212 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 18:03:05,212 - client__main__ - INFO - put_check request pickle send
+2018-11-11 18:03:05,212 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:05:07,758 - client__main__ - INFO - Init Message
+2018-11-11 18:05:07,758 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:05:07,759 - client__main__ - INFO - List operation starts
+2018-11-11 18:05:07,759 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:05:07,759 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:05:07,759 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 18:05:07,759 - client__main__ - INFO - put_check request pickle send
+2018-11-11 18:05:07,759 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:07:20,459 - client__main__ - INFO - Init Message
+2018-11-11 18:07:20,459 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:07:20,459 - client__main__ - INFO - List operation starts
+2018-11-11 18:07:20,459 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:07:20,459 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:07:20,459 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 18:07:20,459 - client__main__ - INFO - put_check request pickle send
+2018-11-11 18:07:20,460 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:30:43,159 - client__main__ - INFO - Init Message
+2018-11-11 18:30:43,159 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:30:43,159 - client__main__ - INFO - List operation starts
+2018-11-11 18:30:43,159 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:30:43,160 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:30:43,160 - client__main__ - INFO - put_check request pickle ready
+2018-11-11 18:30:43,160 - client__main__ - INFO - put_check request pickle send
+2018-11-11 18:30:43,160 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:33:50,605 - client__main__ - INFO - Init Message
+2018-11-11 18:33:50,605 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:33:50,605 - client__main__ - INFO - List operation starts
+2018-11-11 18:33:50,605 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:33:50,605 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:33:50,605 - client__main__ - INFO - request pickle ready
+2018-11-11 18:33:50,605 - client__main__ - INFO - request pickle send
+2018-11-11 18:33:50,605 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:35:11,330 - client__main__ - INFO - Init Message
+2018-11-11 18:35:11,330 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:35:11,330 - client__main__ - INFO - List operation starts
+2018-11-11 18:35:11,330 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:35:11,331 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:35:11,331 - client__main__ - INFO - request pickle ready
+2018-11-11 18:35:11,331 - client__main__ - INFO - request pickle send
+2018-11-11 18:35:11,331 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:35:44,877 - client__main__ - INFO - Init Message
+2018-11-11 18:35:44,877 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:35:44,877 - client__main__ - INFO - List operation starts
+2018-11-11 18:35:44,877 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:35:44,878 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:35:44,878 - client__main__ - INFO - request pickle ready
+2018-11-11 18:35:44,878 - client__main__ - INFO - request pickle send
+2018-11-11 18:35:44,878 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:36:55,670 - client__main__ - INFO - Init Message
+2018-11-11 18:36:55,670 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:36:55,670 - client__main__ - INFO - List operation starts
+2018-11-11 18:36:55,670 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:36:55,671 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:36:55,671 - client__main__ - INFO - request pickle ready
+2018-11-11 18:36:55,671 - client__main__ - INFO - request pickle send
+2018-11-11 18:36:55,671 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:37:08,883 - client__main__ - INFO - Init Message
+2018-11-11 18:37:08,883 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:37:08,883 - client__main__ - INFO - List operation starts
+2018-11-11 18:37:08,883 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:37:08,883 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:37:08,883 - client__main__ - INFO - request pickle ready
+2018-11-11 18:37:08,883 - client__main__ - INFO - request pickle send
+2018-11-11 18:37:08,883 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:37:22,397 - client__main__ - INFO - Init Message
+2018-11-11 18:37:22,397 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:37:22,397 - client__main__ - INFO - List operation starts
+2018-11-11 18:37:22,397 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:37:22,398 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:37:22,398 - client__main__ - INFO - request pickle ready
+2018-11-11 18:37:22,398 - client__main__ - INFO - request pickle send
+2018-11-11 18:37:22,398 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:38:16,074 - client__main__ - INFO - Init Message
+2018-11-11 18:38:16,074 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:38:16,074 - client__main__ - INFO - List operation starts
+2018-11-11 18:38:16,074 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:38:16,075 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:38:16,075 - client__main__ - INFO - request pickle ready
+2018-11-11 18:38:16,075 - client__main__ - INFO - request pickle send
+2018-11-11 18:38:16,075 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:38:24,787 - client__main__ - INFO - Init Message
+2018-11-11 18:38:24,787 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:38:24,787 - client__main__ - INFO - List operation starts
+2018-11-11 18:38:24,787 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:38:24,788 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:38:24,788 - client__main__ - INFO - request pickle ready
+2018-11-11 18:38:24,788 - client__main__ - INFO - request pickle send
+2018-11-11 18:38:24,788 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:41:52,232 - client__main__ - INFO - Init Message
+2018-11-11 18:41:52,232 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:41:52,232 - client__main__ - INFO - List operation starts
+2018-11-11 18:41:52,232 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:41:52,232 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:41:52,232 - client__main__ - INFO - request pickle ready
+2018-11-11 18:41:52,232 - client__main__ - INFO - request pickle send
+2018-11-11 18:41:52,232 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:42:03,687 - client__main__ - INFO - Init Message
+2018-11-11 18:42:03,687 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:42:03,687 - client__main__ - INFO - List operation starts
+2018-11-11 18:42:03,687 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:42:03,687 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:42:03,688 - client__main__ - INFO - request pickle ready
+2018-11-11 18:42:03,688 - client__main__ - INFO - request pickle send
+2018-11-11 18:42:03,688 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:42:37,628 - client__main__ - INFO - Init Message
+2018-11-11 18:42:37,628 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:42:37,628 - client__main__ - INFO - List operation starts
+2018-11-11 18:42:37,628 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:42:37,629 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:42:37,629 - client__main__ - INFO - request pickle ready
+2018-11-11 18:42:37,629 - client__main__ - INFO - request pickle send
+2018-11-11 18:42:37,629 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:43:11,653 - client__main__ - INFO - Init Message
+2018-11-11 18:43:11,653 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:43:11,653 - client__main__ - INFO - List operation starts
+2018-11-11 18:43:11,653 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:43:11,653 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:43:11,653 - client__main__ - INFO - request pickle ready
+2018-11-11 18:43:11,653 - client__main__ - INFO - request pickle send
+2018-11-11 18:43:11,653 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:47:17,028 - client__main__ - INFO - Init Message
+2018-11-11 18:47:17,028 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:47:17,028 - client__main__ - INFO - List operation starts
+2018-11-11 18:47:17,028 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:47:17,029 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:47:17,029 - client__main__ - INFO - request pickle ready
+2018-11-11 18:47:17,029 - client__main__ - INFO - request pickle send
+2018-11-11 18:47:17,029 - client__main__ - DEBUG - get_message function called
+2018-11-11 18:47:26,348 - client__main__ - INFO - Init Message
+2018-11-11 18:47:26,348 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 18:47:26,348 - client__main__ - INFO - List operation starts
+2018-11-11 18:47:26,348 - client__main__ - DEBUG - socket successfully created
+2018-11-11 18:47:26,349 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 18:47:26,349 - client__main__ - INFO - request pickle ready
+2018-11-11 18:47:26,349 - client__main__ - INFO - request pickle send
+2018-11-11 18:47:26,349 - client__main__ - DEBUG - get_message function called
+2018-11-11 19:22:06,064 - client__main__ - INFO - Init Message
+2018-11-11 19:22:06,064 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 19:22:06,064 - client__main__ - INFO - List operation starts
+2018-11-11 19:22:06,064 - client__main__ - DEBUG - socket successfully created
+2018-11-11 19:22:06,064 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 19:22:06,064 - client__main__ - INFO - request pickle ready
+2018-11-11 19:22:06,064 - client__main__ - INFO - request pickle send
+2018-11-11 19:22:06,064 - client__main__ - DEBUG - get_message function called
+2018-11-11 19:22:06,101 - client__main__ - DEBUG - Data recieved
+2018-11-11 19:22:06,101 - client__main__ - DEBUG - Data transmission end
+2018-11-11 19:22:06,101 - client__main__ - DEBUG - Directory is listed
+2018-11-11 19:36:25,770 - client__main__ - INFO - Init Message
+2018-11-11 19:36:25,770 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 19:36:25,770 - client__main__ - INFO - List operation starts
+2018-11-11 19:36:25,771 - client__main__ - DEBUG - socket successfully created
+2018-11-11 19:36:25,771 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 19:36:25,771 - client__main__ - INFO - request pickle ready
+2018-11-11 19:36:25,771 - client__main__ - INFO - request pickle send
+2018-11-11 19:36:25,771 - client__main__ - DEBUG - get_message function called
+2018-11-11 19:36:25,809 - client__main__ - DEBUG - Data recieved
+2018-11-11 19:36:25,809 - client__main__ - DEBUG - Data transmission end
+2018-11-11 19:36:25,809 - client__main__ - DEBUG - Directory is listed
+2018-11-11 19:39:24,483 - client__main__ - INFO - Init Message
+2018-11-11 19:39:24,483 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 19:39:24,483 - client__main__ - INFO - List operation starts
+2018-11-11 19:39:24,484 - client__main__ - DEBUG - socket successfully created
+2018-11-11 19:39:24,484 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 19:39:24,484 - client__main__ - INFO - request pickle ready
+2018-11-11 19:39:24,484 - client__main__ - INFO - request pickle send
+2018-11-11 19:39:24,484 - client__main__ - DEBUG - get_message function called
+2018-11-11 19:39:24,520 - client__main__ - DEBUG - Data recieved
+2018-11-11 19:39:24,520 - client__main__ - DEBUG - Data transmission end
+2018-11-11 19:39:24,520 - client__main__ - DEBUG - Directory is listed
+2018-11-11 19:39:30,222 - client__main__ - INFO - Init Message
+2018-11-11 19:39:30,222 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 19:39:30,222 - client__main__ - INFO - List operation starts
+2018-11-11 19:39:30,222 - client__main__ - DEBUG - socket successfully created
+2018-11-11 19:39:30,223 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 19:39:30,223 - client__main__ - INFO - request pickle ready
+2018-11-11 19:39:30,223 - client__main__ - INFO - request pickle send
+2018-11-11 19:39:30,223 - client__main__ - DEBUG - get_message function called
+2018-11-11 19:39:30,261 - client__main__ - DEBUG - Data recieved
+2018-11-11 19:39:30,261 - client__main__ - DEBUG - Data transmission end
+2018-11-11 19:39:30,261 - client__main__ - DEBUG - Directory is listed
+2018-11-11 19:42:42,500 - client__main__ - INFO - Init Message
+2018-11-11 19:42:42,500 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 19:42:42,500 - client__main__ - INFO - List operation starts
+2018-11-11 19:42:42,500 - client__main__ - DEBUG - socket successfully created
+2018-11-11 19:42:42,501 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 19:42:42,501 - client__main__ - INFO - request pickle ready
+2018-11-11 19:42:42,501 - client__main__ - INFO - request pickle send
+2018-11-11 19:42:42,501 - client__main__ - DEBUG - get_message function called
+2018-11-11 19:42:42,533 - client__main__ - DEBUG - Data recieved
+2018-11-11 19:42:42,534 - client__main__ - DEBUG - Data transmission end
+2018-11-11 19:42:42,534 - client__main__ - DEBUG - New directory is created (mzp7)
+2018-11-11 19:42:54,115 - client__main__ - INFO - Init Message
+2018-11-11 19:42:54,115 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 19:42:54,115 - client__main__ - INFO - List operation starts
+2018-11-11 19:42:54,115 - client__main__ - DEBUG - socket successfully created
+2018-11-11 19:42:54,115 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 19:42:54,115 - client__main__ - INFO - request pickle ready
+2018-11-11 19:42:54,115 - client__main__ - INFO - request pickle send
+2018-11-11 19:42:54,115 - client__main__ - DEBUG - get_message function called
+2018-11-11 19:42:54,154 - client__main__ - DEBUG - Data recieved
+2018-11-11 19:42:54,154 - client__main__ - DEBUG - Data transmission end
+2018-11-11 19:42:54,154 - client__main__ - DEBUG - Directory is listed
+2018-11-11 19:47:40,246 - client__main__ - INFO - Init Message
+2018-11-11 19:47:40,246 - client__main__ - INFO - User give argumen put <put>
+2018-11-11 19:47:40,246 - client__main__ - INFO - Put operation starts
+2018-11-11 19:47:40,246 - client__main__ - DEBUG - socket successfully created
+2018-11-11 19:47:40,247 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 19:47:40,247 - client__main__ - INFO - request pickle ready
+2018-11-11 19:47:40,247 - client__main__ - INFO - request pickle send
+2018-11-11 19:47:40,247 - client__main__ - DEBUG - get_message function called
+2018-11-11 19:47:40,283 - client__main__ - DEBUG - Data recieved
+2018-11-11 19:47:40,283 - client__main__ - DEBUG - Data transmission end
+2018-11-11 19:47:40,283 - client__main__ - ERROR - Unpickling Error
+2018-11-11 19:49:13,313 - client__main__ - INFO - Init Message
+2018-11-11 19:49:13,313 - client__main__ - INFO - User give argumen put <put>
+2018-11-11 19:49:13,313 - client__main__ - INFO - Put operation starts
+2018-11-11 19:49:13,313 - client__main__ - DEBUG - socket successfully created
+2018-11-11 19:49:13,314 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 19:49:13,314 - client__main__ - INFO - request pickle ready
+2018-11-11 19:49:13,314 - client__main__ - INFO - request pickle send
+2018-11-11 19:49:13,314 - client__main__ - DEBUG - get_message function called
+2018-11-11 19:49:13,347 - client__main__ - DEBUG - Data recieved
+2018-11-11 19:49:13,347 - client__main__ - DEBUG - Data transmission end
+2018-11-11 19:49:13,347 - client__main__ - DEBUG - Starting to read local file
+2018-11-11 19:49:13,347 - client__main__ - DEBUG - local file readed
+2018-11-11 19:49:13,347 - client__main__ - INFO - request pickle ready
+2018-11-11 19:57:43,043 - client__main__ - INFO - Init Message
+2018-11-11 19:57:43,043 - client__main__ - INFO - User give argumen put <put>
+2018-11-11 19:57:43,043 - client__main__ - INFO - Put operation starts
+2018-11-11 19:57:43,043 - client__main__ - DEBUG - socket successfully created
+2018-11-11 19:57:43,044 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 19:57:43,044 - client__main__ - INFO - request pickle ready
+2018-11-11 19:57:43,044 - client__main__ - INFO - request pickle send
+2018-11-11 19:57:43,044 - client__main__ - DEBUG - get_message function called
+2018-11-11 19:57:43,080 - client__main__ - DEBUG - Data recieved
+2018-11-11 19:57:43,080 - client__main__ - DEBUG - Data transmission end
+2018-11-11 19:57:43,080 - client__main__ - DEBUG - socket successfully created
+2018-11-11 19:57:43,080 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 19:57:43,080 - client__main__ - DEBUG - Starting to read local file
+2018-11-11 19:57:43,080 - client__main__ - DEBUG - local file readed
+2018-11-11 19:57:43,081 - client__main__ - INFO - request pickle ready
+2018-11-11 19:58:21,871 - client__main__ - INFO - Init Message
+2018-11-11 19:58:21,871 - client__main__ - INFO - User give argumen put <put>
+2018-11-11 19:58:21,871 - client__main__ - INFO - Put operation starts
+2018-11-11 19:58:21,871 - client__main__ - DEBUG - socket successfully created
+2018-11-11 19:58:21,871 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 19:58:21,871 - client__main__ - INFO - request pickle ready
+2018-11-11 19:58:21,871 - client__main__ - INFO - request pickle send
+2018-11-11 19:58:21,872 - client__main__ - DEBUG - get_message function called
+2018-11-11 19:58:21,905 - client__main__ - DEBUG - Data recieved
+2018-11-11 19:58:21,905 - client__main__ - DEBUG - Data transmission end
+2018-11-11 19:58:21,905 - client__main__ - DEBUG - socket successfully created
+2018-11-11 19:58:21,906 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 19:58:21,906 - client__main__ - DEBUG - Starting to read local file
+2018-11-11 19:58:21,906 - client__main__ - DEBUG - local file readed
+2018-11-11 19:58:21,906 - client__main__ - INFO - request pickle ready
+2018-11-11 19:59:33,977 - client__main__ - INFO - Init Message
+2018-11-11 19:59:33,977 - client__main__ - INFO - User give argumen put <put>
+2018-11-11 19:59:33,978 - client__main__ - INFO - Put operation starts
+2018-11-11 19:59:33,978 - client__main__ - DEBUG - socket successfully created
+2018-11-11 19:59:33,978 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 19:59:33,978 - client__main__ - INFO - request pickle ready
+2018-11-11 19:59:33,978 - client__main__ - INFO - request pickle send
+2018-11-11 19:59:33,978 - client__main__ - DEBUG - socket successfully created
+2018-11-11 19:59:33,978 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 19:59:33,978 - client__main__ - DEBUG - get_message function called
+2018-11-11 19:59:34,021 - client__main__ - DEBUG - Data recieved
+2018-11-11 19:59:34,021 - client__main__ - DEBUG - Data transmission end
+2018-11-11 19:59:34,022 - client__main__ - ERROR - Unpickling Error
+2018-11-11 20:02:32,371 - client__main__ - INFO - Init Message
+2018-11-11 20:02:32,371 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 20:02:32,371 - client__main__ - INFO - List operation starts
+2018-11-11 20:02:32,371 - client__main__ - DEBUG - socket successfully created
+2018-11-11 20:02:32,371 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 20:02:32,371 - client__main__ - INFO - request pickle ready
+2018-11-11 20:02:32,371 - client__main__ - INFO - request pickle send
+2018-11-11 20:02:32,371 - client__main__ - DEBUG - get_message function called
+2018-11-11 20:02:32,407 - client__main__ - DEBUG - Data recieved
+2018-11-11 20:02:32,407 - client__main__ - DEBUG - Data transmission end
+2018-11-11 20:02:32,408 - client__main__ - DEBUG - Directory is listed
+2018-11-11 20:02:38,318 - client__main__ - INFO - Init Message
+2018-11-11 20:02:38,318 - client__main__ - INFO - User give argumen list <list>
+2018-11-11 20:02:38,318 - client__main__ - INFO - List operation starts
+2018-11-11 20:02:38,318 - client__main__ - DEBUG - socket successfully created
+2018-11-11 20:02:38,318 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 20:02:38,319 - client__main__ - INFO - request pickle ready
+2018-11-11 20:02:38,319 - client__main__ - INFO - request pickle send
+2018-11-11 20:02:38,319 - client__main__ - DEBUG - get_message function called
+2018-11-11 20:02:38,365 - client__main__ - DEBUG - Data recieved
+2018-11-11 20:02:38,365 - client__main__ - DEBUG - Data transmission end
+2018-11-11 20:02:38,365 - client__main__ - DEBUG - Directory is listed
+2018-11-11 20:02:49,685 - client__main__ - INFO - Init Message
+2018-11-11 20:02:49,685 - client__main__ - INFO - User give argumen put <put>
+2018-11-11 20:02:49,685 - client__main__ - INFO - Put operation starts
+2018-11-11 20:02:49,685 - client__main__ - DEBUG - socket successfully created
+2018-11-11 20:02:49,686 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 20:02:49,686 - client__main__ - INFO - request pickle ready
+2018-11-11 20:02:49,686 - client__main__ - INFO - request pickle send
+2018-11-11 20:02:49,686 - client__main__ - DEBUG - socket successfully created
+2018-11-11 20:02:49,686 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 20:02:49,686 - client__main__ - DEBUG - get_message function called
+2018-11-11 20:02:49,722 - client__main__ - DEBUG - Data recieved
+2018-11-11 20:02:49,722 - client__main__ - DEBUG - Data transmission end
+2018-11-11 20:02:49,722 - client__main__ - ERROR - Unpickling Error
+2018-11-11 20:04:50,230 - client__main__ - INFO - Init Message
+2018-11-11 20:04:50,230 - client__main__ - INFO - User give argumen put <put>
+2018-11-11 20:04:50,230 - client__main__ - INFO - Put operation starts
+2018-11-11 20:04:50,230 - client__main__ - DEBUG - socket successfully created
+2018-11-11 20:04:50,230 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 20:04:50,230 - client__main__ - INFO - request pickle ready
+2018-11-11 20:04:50,230 - client__main__ - INFO - request pickle send
+2018-11-11 20:04:50,230 - client__main__ - DEBUG - socket successfully created
+2018-11-11 20:04:50,230 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 20:04:50,231 - client__main__ - DEBUG - get_message function called
+2018-11-11 20:04:50,266 - client__main__ - DEBUG - Data recieved
+2018-11-11 20:04:50,266 - client__main__ - DEBUG - Data transmission end
+2018-11-11 20:04:50,267 - client__main__ - ERROR - Unpickling Error
+2018-11-11 20:05:40,257 - client__main__ - INFO - Init Message
+2018-11-11 20:05:40,257 - client__main__ - INFO - User give argumen put <put>
+2018-11-11 20:05:40,257 - client__main__ - INFO - Put operation starts
+2018-11-11 20:05:40,257 - client__main__ - DEBUG - socket successfully created
+2018-11-11 20:05:40,258 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 20:05:40,258 - client__main__ - INFO - request pickle ready
+2018-11-11 20:05:40,258 - client__main__ - INFO - request pickle send
+2018-11-11 20:05:40,258 - client__main__ - DEBUG - socket successfully created
+2018-11-11 20:05:40,259 - client__main__ - DEBUG - socket successfully connected
+2018-11-11 20:05:40,259 - client__main__ - DEBUG - get_message function called
+2018-11-11 20:05:40,292 - client__main__ - DEBUG - Data recieved
+2018-11-11 20:05:40,292 - client__main__ - DEBUG - Data transmission end
+2018-11-11 20:05:40,293 - client__main__ - ERROR - Unpickling Error

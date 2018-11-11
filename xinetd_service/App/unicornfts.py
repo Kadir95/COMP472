@@ -17,15 +17,18 @@ op_list = ["put", "get", "del", "list"]
 port = 8080
 host = "localhost"
 
+# Logging environment setup
 log = logging.getLogger("client" + __name__)
-log.setLevel(logging.NOTSET)
+log.setLevel(logging.DEBUG)
 
 log_fh = logging.FileHandler("client.log")
-log_fh.setLevel(logging.NOTSET)
+log_fh.setLevel(logging.DEBUG)
 
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 log_fh.setFormatter(formatter)
 log.addHandler(log_fh)
+
+log.info("Init Message")
 
 def md5(fname):
     hash_md5 = hashlib.md5()
@@ -33,6 +36,46 @@ def md5(fname):
         for chunk in iter(lambda: f.read(4096), b""):
             hash_md5.update(chunk)
     return hash_md5.hexdigest()
+
+def send_message(s_socket, message):
+    request_pickle = pickle.dumps(message, pickle.HIGHEST_PROTOCOL)
+    log.info("request pickle ready")
+
+    request_pickle += b'\n'
+
+    s_socket.send(request_pickle)
+    log.info("request pickle send")
+
+def get_message(s_socket):
+    log.debug("get_message function called")
+    transmission_check_pickle = []
+
+    s_socket.shutdown(socket.SHUT_WR)
+
+    BUFFER_SIZE = 4096
+
+    while True:
+        data = s_socket.recv(BUFFER_SIZE)
+        log.debug("Data recieved")
+        transmission_check_pickle.append(data)
+        if len(data) < BUFFER_SIZE:
+            log.debug("Data transmission end")
+            break
+    
+    s_socket.close()
+
+    transmission_check_pickle = b''.join(transmission_check_pickle)
+
+    print(transmission_check_pickle)
+
+    try:
+        transmission_check = pickle.loads(transmission_check_pickle)
+    except pickle.UnpicklingError as err:
+        log.error("Unpickling Error")
+        print("An error occur!", err)
+        sys.exit(0)
+    
+    return transmission_check
 
 def create_socket():
     try:
@@ -72,33 +115,20 @@ def put():
         "md5"       : md5(sys.argv[2])
     }
 
-    request_pickle = pickle.dumps(request, pickle.HIGHEST_PROTOCOL)
-    log.info("put_check request pickle ready")
+    send_message(s_socket, request)
+    s_socket = create_socket()
 
-    s_socket.send(request_pickle)
-    log.info("put_check request pickle send")
-
-    transmission_check_pickle = b""
-    while True:
-        data = s_socket.recv(4096)
-        if not data:
-            break
-        transmission_check_pickle += data
-    print(transmission_check_pickle)
-    try:
-        transmission_check = pickle.loads(transmission_check_pickle)
-    except pickle.UnpicklingError as err:
-        log.error("Unpickling Error")
-        print("An error occur!", err)
-        sys.exit(0)
+    transmission_check = get_message(s_socket)
 
     if transmission_check["send"] != "OK":
         log.info(transmission_check["message_log"])
         print(transmission_check["message"])
         sys.exit(0)
     
+    log.debug("Starting to read local file")
     with open(sys.argv[2], "rb") as binary_file:
         data = binary_file.read()
+    log.debug("local file readed")
 
     request = {
         "op"        : "put",
@@ -108,17 +138,10 @@ def put():
         "file"      : data
     }
     
-    request_pickle = pickle.dumps(request, pickle.HIGHEST_PROTOCOL)
-    s_socket.send(request_pickle)
-
-    transmission_check_pickle = s_socket.recv(4096)
-    try:
-        transmission_check = pickle.loads(transmission_check_pickle)
-    except pickle.UnpicklingError as err:
-        log.error("Unpickling Error at " + err)
-        print("An error occur!")
-        sys.exit(0)
+    send_message(s_socket, request)
     
+    transmission_check = get_message(s_socket)
+
     if transmission_check["success"] == "yes":
         log.info("data transfer complete successfully")
         print(transmission_check["message"])
@@ -147,24 +170,15 @@ def delete():
 def list_files():
     log.info("List operation starts")
 
+    s_socket = create_socket()
     request = {
         "op"        : "list",
         "username"  : getpass.getuser()
     }
-    request_pickle = pickle.dumps(request, pickle.HIGHEST_PROTOCOL)
-
-    s_socket = create_socket()
-    s_socket.send(request_pickle)
-
-
-    response_pickle = b''
-    while True:
-        data = s_socket.recv(4096)
-        if not data:
-            break
-        response_pickle += data
     
-    response = pickle.loads(request_pickle)
+    send_message(s_socket, request)
+    
+    response = get_message(s_socket)
 
     if response["success"] == "yes":
         log.debug(response["message_log"])
@@ -191,16 +205,3 @@ if len(sys.argv) > 1 and sys.argv[1].lower() in op_list:
 else:
     print("Usage: " + sys.argv[0] + " <operation>")
     sys.exit(0)
-
-
-
-
-
-"""
-finally:
-    while 1:
-        sent = input("sent:") + "\n"
-        server_s.send(str.encode(sent))
-        data = server_s.recv(1024).decode()
-        print("Rec:", data)
-"""
