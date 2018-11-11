@@ -121,13 +121,38 @@ def put_check(data):
         return
         
 def get(data):
-        pass
+        log.info("Get oprateion starts")
+
+        user_path = pathlib.Path(path + data["username"] + "/")
+        file_path = pathlib.Path(str(user_path.absolute()) + "/" + data["filename"])  
+        log.debug("File path : %s", file_path.absolute())
+
+        if not os.path.isfile(file_path.absolute()):
+                log.info("File doesn't found")
+                reply = {
+                        "success"       : "no",
+                        "message_log"   : "File doesn't found",
+                        "message"       : "File doesn't found"
+                }
+                send_message(reply)
+                return
+        
+        with open(file_path.absolute(), "rb") as file:
+                reply = {
+                        "success"       : "yes",
+                        "message_log"   : "File is found",
+                        "message"       : "File is found",
+                        "filename"      : file_path.name,
+                        "file"          : file.read(),
+                        "md5"           : md5(file_path.absolute())
+                }
+                send_message(reply)
 
 def delete(data):
         log.info("Del oprateion starts")
         
         user_path = pathlib.Path(path + data["username"] + "/")
-        file_path = pathlib.Path(user_path + data["filename"])  
+        file_path = pathlib.Path(str(user_path.absolute()) + "/" + data["filename"])  
         log.debug("File path : %s", file_path.absolute())
 
         if not os.path.isfile(file_path.absolute()):

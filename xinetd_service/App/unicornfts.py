@@ -149,12 +149,38 @@ def put():
 
 def get():
     log.info("Get operation starts")
-    s_socket = create_socket()
-    s_socket.send(str.encode("get\n"))
+    
+    request = {
+        "op"        : "get",
+        "username"  : getpass.getuser(),
+        "filename"  : sys.argv[2]
+    }
 
-    data = s_socket.recv(1024).decode()
-    print("Rec:", data)
-    pass
+    s_socket = create_socket()
+    send_message(s_socket, request)
+    log.info("Request is send to server")
+
+    server_reply = get_message(s_socket)
+    log.info("Message is received from server")
+
+    if server_reply["success"] != "yes":
+        log.warning("Server progress err <server message: %s>", server_reply["message_log"])
+        print(server_reply["message"])
+        return
+
+    with open(server_reply["filename"], "wb") as file:
+        file.write(server_reply["file"])
+        file.close()
+    
+    if md5(server_reply["filename"]) != server_reply["md5"]:
+        log.warning("Files MD5s don't match")
+        print("Files MD5s don't match")
+        os.remove(server_reply["filename"])
+        log.info("File is deleted on local")
+        return
+    
+    log.info("File is transfered successfully")
+    print("File is transfered successfully")
 
 def delete():
     log.info("Del operation starts")
