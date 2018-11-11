@@ -150,6 +150,11 @@ def put():
 def get():
     log.info("Get operation starts")
     
+    if len(sys.argv) < 3:
+        log.warning("User arguments insufficient")
+        print("Usage: " + sys.argv[0] + " get <file name>")
+        sys.exit(0)
+
     request = {
         "op"        : "get",
         "username"  : getpass.getuser(),
@@ -185,6 +190,11 @@ def get():
 def delete():
     log.info("Del operation starts")
     
+    if len(sys.argv) < 3:
+        log.warning("User arguments insufficient")
+        print("Usage: " + sys.argv[0] + " del <file name>")
+        sys.exit(0)
+
     file_path = pathlib.Path(sys.argv[2])
 
     # Client has to have the file locally
@@ -237,17 +247,15 @@ if len(sys.argv) > 1 and sys.argv[1].lower() in op_list:
     operation = sys.argv[1].lower()
     log.info("User give argumen " + sys.argv[1] + " <" + operation + ">")
 
-    op_num = op_list.index(operation)
-
-    if op_num == 0:
+    if operation == "put":
         put()
-    if op_num == 1:
+    if operation == "get":
         get()
-    if op_num == 2:
+    if operation == "del":
         delete()
-    if op_num == 3:
+    if operation == "list":
         list_files()
-
 else:
     print("Usage: " + sys.argv[0] + " <operation>")
+    print("Operations : put, get, del, list")
     sys.exit(0)

@@ -12,14 +12,21 @@ import os
 import hashlib
 import subprocess
 import pathlib
+import json
 
-path="/home/mzp7/workspace/comp472/xinetd_service/data/"
+with open("/home/mzp7/workspace/comp472/xinetd_service/App/settings/g_settings.json", "r") as setting_file:
+        settings = json.load(setting_file)
+
+path = settings["server"]["data_path"]
 
 # Logging environment setup
 log = logging.getLogger("server" + __name__)
 log.setLevel(logging.DEBUG)
 
-log_fh = logging.FileHandler("/home/mzp7/workspace/comp472/xinetd_service/" + "server.log")
+if not os.path.isdir(settings["server"]["logging_path"]):
+        os.makedirs(settings["server"]["logging_path"])
+
+log_fh = logging.FileHandler(settings["server"]["logging_path"] + "server.log")
 log_fh.setLevel(logging.DEBUG)
 
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
