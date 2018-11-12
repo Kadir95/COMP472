@@ -11,7 +11,6 @@ import pickle
 import os 
 import hashlib
 import subprocess
-import pathlib
 import json
 
 with open(os.environ["SERVERSETTINGS"], "r") as setting_file:
