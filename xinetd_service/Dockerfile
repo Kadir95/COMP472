@@ -1,5 +1,6 @@
 FROM ubuntu:16.04
 ENV PORT    8181
+ENV SERVERSETTINGS  "/App/settings/s_settings.json"
 RUN apt-get update && \
     apt-get -y dist-upgrade && \
     apt-get install -y --no-install-recommends tcpd xinetd python3 nano lsof && \

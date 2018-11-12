@@ -14,7 +14,7 @@ import subprocess
 import pathlib
 import json
 
-with open("/home/mzp7/workspace/comp472/xinetd_service/App/settings/g_settings.json", "r") as setting_file:
+with open(os.environ["SERVERSETTINGS"], "r") as setting_file:
         settings = json.load(setting_file)
 
 path = settings["server"]["data_path"]
@@ -47,94 +47,82 @@ def md5(fname):
             hash_md5.update(chunk)
     return hash_md5.hexdigest()
 
-def md5v(data):
-        hash = hashlib.md5()
-        hash.update(data)
-        return hash.hexdigest()
-
 def put(data):
-        log.info("put function starts")
+        log.info("Put operation starts")
+
         user_path = path + data["username"] + "/"
-        file_path = user_path + data["filename"]
+        file_path = user_path+ data["filename"]
 
         log.debug("data size : " + str(len(data["file"])/1024))
         with open(file_path, "wb") as file:
                 file.write(data["file"])
                 file.close()
-        
+        log.debug("Data is written to %s", file_path)
+
         if md5(file_path) != data["md5"]:
-                log.info("files md5 doesn't mach")
-                os.remove(user_path + data["filename"])
+                log.info("MD5 check failed")
+                os.remove(file_path)
                 reply = {
                         "success"       : "no",
-                        "message"       : "MD5s didn't mach",
-                        "message_log"   : "MD5s didn't mach"
+                        "message"       : "MD5s didn't match",
+                        "message_log"   : "MD5s didn't match"
                 }
-                reply_pickle = pickle.dumps(reply, pickle.HIGHEST_PROTOCOL)
-                sys.stdout.buffer.write(reply_pickle)
-                sys.stdout.flush()
+                send_message(reply)
                 return
 
-        log.info("file write")
+        log.info("File is transferred successfully")
 
         reply = {
                 "success"       : "yes",
-                "message"       : "File successfully trasfered",
-                "message_log"   : "File successfully trasfered"
+                "message"       : "File is transferred successfully",
+                "message_log"   : "File is transferred successfully"
         }
-        reply_pickle = pickle.dumps(reply, pickle.HIGHEST_PROTOCOL)
-        sys.stdout.buffer.write(reply_pickle)
-        sys.stdout.flush()
-        return
+        send_message(reply)
         
 def put_check(data):
-        log.debug("put_check username: " + data["username"])
-        if not os.path.isdir(path + data["username"]):
-                log.debug("put_check username: " + data["username"] + "there is no directory")
+        log.debug("Put_check operation starts <username:%s>", data["username"])
+
+        user_path = path + data["username"] + "/"
+        file_path = user_path + data["filename"]
+
+        if not os.path.isdir(user_path):
+                log.debug("put_check <username:%s> there is no directory", data["username"])
                 reply = {
                         "send"          : "NOT",
-                        "message"       : "User dictinoary is not created",
-                        "message_log"   : "User dictinoary is not created"
+                        "message"       : "There is no user directory",
+                        "message_log"   : "There is no user directory"
                 }
-                reply_pickle = pickle.dumps(reply, pickle.HIGHEST_PROTOCOL)
-                sys.stdout.buffer.write(reply_pickle)
-                sys.stdout.flush()
+                send_message(reply)
                 return
         
-        user_path = path + data["username"] + "/"
-
-        if os.path.isfile(user_path + data["filename"]):
-                if data["md5"] == md5(user_path + data["filename"]):
-                        log.debug("put_check username: " + data["username"] + " the file already exists")
+        if os.path.isfile(file_path):
+                if data["md5"] == md5(file_path):
+                        log.debug("put_check <username:%s> the file already exists", data["username"])
                         reply = {
                                 "send"          : "NOT",
                                 "message"       : "The file already exists",
                                 "message_log"   : "The file already exists"
                         }
-                        reply_pickle = pickle.dumps(reply, pickle.HIGHEST_PROTOCOL)
-                        sys.stdout.buffer.write(reply_pickle)
-                        sys.stdout.flush()
+                        send_message(reply)
                         return
         
-        log.debug("put_check username: " + data["username"] + " send a request for the file")
+        log.debug("put_check <username:%s> send a request for the file", data["username"])
         reply = {
                 "send"          : "OK",
                 "message"       : "send a request for the file",
                 "message_log"   : "send a request for the file"
         }
-        reply_pickle = pickle.dumps(reply, pickle.HIGHEST_PROTOCOL)
-        sys.stdout.buffer.write(reply_pickle)
-        sys.stdout.flush()
-        return
+        send_message(reply)
         
 def get(data):
-        log.info("Get oprateion starts")
+        log.info("Get operation starts")
 
-        user_path = pathlib.Path(path + data["username"] + "/")
-        file_path = pathlib.Path(str(user_path.absolute()) + "/" + data["filename"])  
-        log.debug("File path : %s", file_path.absolute())
+        user_path = path + data["username"] + "/"
+        file_path = user_path + data["filename"]
 
-        if not os.path.isfile(file_path.absolute()):
+        log.debug("File path : %s", file_path)
+
+        if not os.path.isfile(file_path):
                 log.info("File doesn't found")
                 reply = {
                         "success"       : "no",
@@ -144,70 +132,71 @@ def get(data):
                 send_message(reply)
                 return
         
-        with open(file_path.absolute(), "rb") as file:
+        with open(file_path, "rb") as file:
                 reply = {
                         "success"       : "yes",
                         "message_log"   : "File is found",
                         "message"       : "File is found",
-                        "filename"      : file_path.name,
+                        "filename"      : file_path.split("/")[-1],
                         "file"          : file.read(),
-                        "md5"           : md5(file_path.absolute())
+                        "md5"           : md5(file_path)
                 }
                 send_message(reply)
 
 def delete(data):
-        log.info("Del oprateion starts")
+        log.info("Del operation starts")
         
-        user_path = pathlib.Path(path + data["username"] + "/")
-        file_path = pathlib.Path(str(user_path.absolute()) + "/" + data["filename"])  
-        log.debug("File path : %s", file_path.absolute())
+        user_path = path + data["username"] + "/"
+        file_path = user_path + data["filename"]
+        log.debug("File path : %s", file_path)
 
-        if not os.path.isfile(file_path.absolute()):
+        if not os.path.isfile(file_path):
                 log.info("File doesn't exists")
                 reply = {
                         "success"       : "no",
-                        "message_log"   : "File couldn't find",
-                        "message"       : file_path.name + " couldn't find"
+                        "message_log"   : "File doesn't found",
+                        "message"       : file_path.split("/")[-1] + " doesn't found"
                 }
                 send_message(reply)
                 return
         
-        if data["filesize"] != os.stat(file_path.absolute()).st_size:
+        if data["filesize"] != os.stat(file_path).st_size:
                 log.info("File sizes doesn't match")
                 reply = {
                         "success"       : "no",
-                        "message_log"   : "File sizes don't mach",
-                        "message"       : file_path.name + " sizes don't mach"
+                        "message_log"   : "File sizes don't match",
+                        "message"       : file_path.split("/")[-1] + " sizes don't match"
                 }
                 send_message(reply)
                 return
 
-        if md5(file_path.absolute()) != data["md5"]:
-                log.info("File md5s doesn't match")
+        if md5(file_path) != data["md5"]:
+                log.info("MD5 check failed")
                 reply = {
                         "success"       : "no",
-                        "message_log"   : "File md5s don't mach",
-                        "message"       : file_path.name + " md5s don't mach"
+                        "message_log"   : "MD5 check failed",
+                        "message"       : file_path.split("/")[-1] + " MD5 check failed"
                 }
                 send_message(reply)
                 return
 
-        os.remove(file_path.absolute())
+        os.remove(file_path)
         log.info("File is deleted successfully")
         reply = {
                 "success"       : "yes",
-                "message_log"   : "File deleted succesfully",
-                "message"       : file_path.name + " deleted succesfully"
+                "message_log"   : "File is deleted successfully",
+                "message"       : file_path.split("/")[-1] + " is deleted successfully"
         }
         send_message(reply)
         log.info("Message is send")
 
 def list_files(data):
-        log.info("list file function started")
+        log.info("list file operation started")
 
         user_path = path + data["username"] + "/"
+
         if not os.path.exists(user_path):
-                log.info("User directory created <user: " + data["username"] + ">")
+                log.info("User directory created <username:%s>", data["username"])
                 os.makedirs(user_path)
 
                 response = {
@@ -215,67 +204,63 @@ def list_files(data):
                         "message"       : "New directory is created (" + data["username"] + ")",
                         "message_log"   : "New directory is created (" + data["username"] + ")"
                 }
-
-                response_pickle = pickle.dumps(response, pickle.HIGHEST_PROTOCOL)
-                sys.stdout.buffer.write(response_pickle)
-                sys.stdout.flush()
-                log.debug("List function send creation message to client")
+                send_message(response)
+                log.debug("List function send the directory creation message to the client")
                 return
+        
         if os.path.isdir(user_path):
-                log.info("user directory found <user: " + data["username"] + ">")
+                log.info("user directory found <username:%s>", data["username"])
                 output = subprocess.check_output(["ls", "-l", user_path]).decode()
-                log.debug("List function list the directory \n" + str(output))
+
+                if "total 0" in output:
+                        output = "There is no stored file"
+
+                log.debug("List function list the directory \n%s", str(output))
                 response = {
                         "success"       : "yes",
                         "message"       : output,
                         "message_log"   : "Directory is listed"
                 }
-                response_pickle = pickle.dumps(response, pickle.HIGHEST_PROTOCOL)
-                sys.stdout.buffer.write(response_pickle)
-                sys.stdout.flush()
-                log.debug("List function ended successfully")
+                send_message(response)
+                log.debug("List function is ended successfully")
                 return
         
         log.error("List function couldn't figure out the directory")
         response = {
                 "success"       : "no",
-                "message"       : "err list",
-                "message_log"   : "err list"
+                "message"       : "List function couldn't figure out the directory",
+                "message_log"   : "List function couldn't figure out the directory"
         }
-        response_pickle = pickle.dumps(response, pickle.HIGHEST_PROTOCOL)
-        sys.stdout.buffer.write(response_pickle)
-        sys.stdout.flush()
-        log.error("List function send the error message to client")
-        return
-
+        send_message(response)
+        log.error("List function send the error message to the client")
 
 data_pickle  = sys.stdin.buffer.read()
 
 data = pickle.loads(data_pickle)
 
-opetaion = data["op"]
+operation = data["op"]
 
-log.debug("Received operation is " + opetaion)
+log.debug("Received operation is " + operation)
 
 if not os.path.exists(path):
         os.makedirs(path)
 
-if opetaion == "put":
-        log.debug("Put operation starts")
+if operation == "put":
+        log.debug("Put operation is called")
         put(data)
         
-if opetaion == "put_check":
-        log.debug("Put_check operation starts")
+if operation == "put_check":
+        log.debug("Put_check operation is called")
         put_check(data)
 
-if opetaion == "get":
-        log.debug("Get operation starts")
+if operation == "get":
+        log.debug("Get operation is called")
         get(data)
         
-if opetaion == "del":
-        log.debug("Del operation starts")
+if operation == "del":
+        log.debug("Del operation is called")
         delete(data)
 
-if opetaion == "list":
-        log.debug("List operation starts")
+if operation == "list":
+        log.debug("List operation is called")
         list_files(data)

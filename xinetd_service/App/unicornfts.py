@@ -15,7 +15,7 @@ import hashlib
 import pathlib
 
 op_list = ["put", "get", "del", "list"]
-port = 8080
+port = 8181
 host = "localhost"
 
 # Logging environment setup
@@ -57,7 +57,6 @@ def get_message(s_socket):
 
     while True:
         data = s_socket.recv(BUFFER_SIZE)
-        log.debug("Data recieved")
         transmission_check_pickle.append(data)
         if len(data) < BUFFER_SIZE:
             log.debug("Data transmission end")
@@ -79,17 +78,17 @@ def get_message(s_socket):
 def create_socket():
     try:
         server_s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        log.debug("socket successfully created")
+        log.debug("Socket successfully created")
     except socket.error as err:
-        log.error("socket conneciton failed with error" + err)
+        log.error("Socket connection failed with error" + err)
 
     try:
         server_s.connect((host, port))
-        log.debug("socket successfully connected")
+        log.debug("Socket successfully connected")
         return server_s
     except socket.error as err:
-        log.error("server connection failed with error" + err)
-    log.error("socket failed")
+        log.error("Server connection failed with error" + err)
+    log.error("Socket failed")
     return None
 
 def put():
@@ -102,6 +101,7 @@ def put():
     
     if not os.path.isfile(sys.argv[2]):
         log.warning("User argument is not a file")
+        print(sys.argv[2], "file couldn't found")
         print("Usage: " + sys.argv[0] + " put <file name>")
         sys.exit(0)
     
@@ -125,7 +125,7 @@ def put():
     log.debug("Starting to read local file")
     with open(sys.argv[2], "rb") as binary_file:
         data = binary_file.read()
-    log.debug("local file readed")
+    log.debug("The local file was read")
 
     request = {
         "op"        : "put",
@@ -184,8 +184,8 @@ def get():
         log.info("File is deleted on local")
         return
     
-    log.info("File is transfered successfully")
-    print("File is transfered successfully")
+    log.info("File is transferred successfully")
+    print("File is transferred successfully")
 
 def delete():
     log.info("Del operation starts")
@@ -245,7 +245,7 @@ def list_files():
 
 if len(sys.argv) > 1 and sys.argv[1].lower() in op_list:
     operation = sys.argv[1].lower()
-    log.info("User give argumen " + sys.argv[1] + " <" + operation + ">")
+    log.info("The user gives argument <arg:%s> <operation:%s> ", sys.argv[1], operation)
 
     if operation == "put":
         put()
@@ -256,6 +256,7 @@ if len(sys.argv) > 1 and sys.argv[1].lower() in op_list:
     if operation == "list":
         list_files()
 else:
+    log.info("The user gives insufficient arguments")
     print("Usage: " + sys.argv[0] + " <operation>")
     print("Operations : put, get, del, list")
     sys.exit(0)

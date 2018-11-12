@@ -1,0 +1,6 @@
+{
+    "server" : {
+        "data_path" : "/unicorn_service/data/",
+        "logging_path" : "/unicorn_service/log/"
+    }
+}
