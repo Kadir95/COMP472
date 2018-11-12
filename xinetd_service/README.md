@@ -1,7 +1,6 @@
-
 # Xinetd Data Mover (unicornfts)
 ## Start to work
-Host machine must have docker. Server side of the data mover (unicornfts) is run on docker container and it exposes 8181 port to host.
+Host machine must have docker. Server side of the data mover (unicornfts) is run on docker container and it exposes <code>8181</code> port to host.
 ### Setup
 Run those command on your shell. <code>./build.sh</code> will ask root password
 
@@ -25,6 +24,7 @@ If you run the list functionality first time, the server will create a directory
 	New directory is created (<username>)
 	$ ./client/unicornfts.py list
 	There is no stored file
+
 #### get
 get functionality downloads file from server to client. It take 1 argument which is file name.
 
@@ -44,6 +44,7 @@ del functionality delete remote data if the client machine has a copy of the dat
 	File test.data is deleted
 	$ ./client/unicornfts.py list
 	There is no stored file
+
 #### put
 put functionality upload a data. It takes 1 argument which is file name.
 put checks the local file and the uploaded file according to MD5. If they match, uploading progress is ended successfully. Otherwise the progress will delete
