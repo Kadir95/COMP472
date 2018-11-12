@@ -50,7 +50,7 @@ def put(data):
         log.info("Put operation starts")
 
         user_path = path + data["username"] + "/"
-        file_path = user_path+ data["filename"]
+        file_path = user_path + data["filename"]
 
         log.debug("data size : " + str(len(data["file"])/1024))
         with open(file_path, "wb") as file:
@@ -83,6 +83,8 @@ def put_check(data):
 
         user_path = path + data["username"] + "/"
         file_path = user_path + data["filename"]
+        
+        log.debug("<userpath:%s> <filepath:%s>", user_path, file_path)
 
         if not os.path.isdir(user_path):
                 log.debug("put_check <username:%s> there is no directory", data["username"])
@@ -95,7 +97,9 @@ def put_check(data):
                 return
         
         if os.path.isfile(file_path):
-                if data["md5"] == md5(file_path):
+                server_md5 = md5(file_path)
+                log.debug("server file md5:%s, client file md5:%s", server_md5, data["md5"])
+                if data["md5"] == server_md5:
                         log.debug("put_check <username:%s> the file already exists", data["username"])
                         reply = {
                                 "send"          : "NOT",

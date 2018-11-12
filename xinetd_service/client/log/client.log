@@ -1,0 +1,446 @@
+2018-11-12 06:07:30,920 - client__main__ - INFO - Init Message
+2018-11-12 06:07:30,920 - client__main__ - INFO - The user gives argument <arg:list> <operation:list> 
+2018-11-12 06:07:30,920 - client__main__ - INFO - List operation starts
+2018-11-12 06:07:30,920 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:07:30,920 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:07:30,920 - client__main__ - INFO - request pickle ready
+2018-11-12 06:07:30,920 - client__main__ - INFO - request pickle send
+2018-11-12 06:07:30,921 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:07:30,963 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:07:30,964 - client__main__ - DEBUG - Directory is listed
+2018-11-12 06:07:36,406 - client__main__ - INFO - Init Message
+2018-11-12 06:07:36,407 - client__main__ - INFO - The user gives argument <arg:list> <operation:list> 
+2018-11-12 06:07:36,407 - client__main__ - INFO - List operation starts
+2018-11-12 06:07:36,407 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:07:36,407 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:07:36,407 - client__main__ - INFO - request pickle ready
+2018-11-12 06:07:36,407 - client__main__ - INFO - request pickle send
+2018-11-12 06:07:36,407 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:07:36,451 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:07:36,451 - client__main__ - DEBUG - Directory is listed
+2018-11-12 06:08:20,633 - client__main__ - INFO - Init Message
+2018-11-12 06:08:20,633 - client__main__ - INFO - The user gives argument <arg:get> <operation:get> 
+2018-11-12 06:08:20,633 - client__main__ - INFO - Get operation starts
+2018-11-12 06:08:20,633 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:08:20,633 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:08:20,633 - client__main__ - INFO - request pickle ready
+2018-11-12 06:08:20,633 - client__main__ - INFO - request pickle send
+2018-11-12 06:08:20,633 - client__main__ - INFO - Request is send to server
+2018-11-12 06:08:20,633 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:08:20,676 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:08:20,677 - client__main__ - INFO - Message is received from server
+2018-11-12 06:08:20,677 - client__main__ - INFO - File is transferred successfully
+2018-11-12 06:08:24,208 - client__main__ - INFO - Init Message
+2018-11-12 06:08:24,209 - client__main__ - INFO - The user gives argument <arg:get> <operation:get> 
+2018-11-12 06:08:24,209 - client__main__ - INFO - Get operation starts
+2018-11-12 06:08:24,209 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:08:24,209 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:08:24,209 - client__main__ - INFO - request pickle ready
+2018-11-12 06:08:24,209 - client__main__ - INFO - request pickle send
+2018-11-12 06:08:24,209 - client__main__ - INFO - Request is send to server
+2018-11-12 06:08:24,209 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:08:24,252 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:08:24,252 - client__main__ - INFO - Message is received from server
+2018-11-12 06:08:24,252 - client__main__ - WARNING - Server progress err <server message: File doesn't found>
+2018-11-12 06:09:23,850 - client__main__ - INFO - Init Message
+2018-11-12 06:09:23,850 - client__main__ - INFO - The user gives argument <arg:del> <operation:del> 
+2018-11-12 06:09:23,850 - client__main__ - INFO - Del operation starts
+2018-11-12 06:09:23,850 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:09:23,851 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:09:23,851 - client__main__ - INFO - request pickle ready
+2018-11-12 06:09:23,851 - client__main__ - INFO - request pickle send
+2018-11-12 06:09:23,851 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:09:23,894 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:09:23,894 - client__main__ - INFO - Del operation ended successfully
+2018-11-12 06:09:33,249 - client__main__ - INFO - Init Message
+2018-11-12 06:09:33,249 - client__main__ - INFO - The user gives argument <arg:del> <operation:del> 
+2018-11-12 06:09:33,249 - client__main__ - INFO - Del operation starts
+2018-11-12 06:09:33,249 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:09:33,249 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:09:33,249 - client__main__ - INFO - request pickle ready
+2018-11-12 06:09:33,249 - client__main__ - INFO - request pickle send
+2018-11-12 06:09:33,250 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:09:33,294 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:09:33,294 - client__main__ - INFO - Del operation ended successfully
+2018-11-12 06:10:24,780 - client__main__ - INFO - Init Message
+2018-11-12 06:10:24,780 - client__main__ - INFO - The user gives argument <arg:del> <operation:del> 
+2018-11-12 06:10:24,780 - client__main__ - INFO - Del operation starts
+2018-11-12 06:10:24,780 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:10:24,781 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:10:24,781 - client__main__ - INFO - request pickle ready
+2018-11-12 06:10:24,781 - client__main__ - INFO - request pickle send
+2018-11-12 06:10:24,781 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:10:24,823 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:10:24,823 - client__main__ - WARNING - Del operation ended with faliure <server message : File doesn't found>
+2018-11-12 06:10:31,401 - client__main__ - INFO - Init Message
+2018-11-12 06:10:31,401 - client__main__ - INFO - The user gives argument <arg:del> <operation:del> 
+2018-11-12 06:10:31,401 - client__main__ - INFO - Del operation starts
+2018-11-12 06:10:31,401 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:10:31,402 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:10:31,402 - client__main__ - INFO - request pickle ready
+2018-11-12 06:10:31,402 - client__main__ - INFO - request pickle send
+2018-11-12 06:10:31,402 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:10:31,447 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:10:31,447 - client__main__ - WARNING - Del operation ended with faliure <server message : File doesn't found>
+2018-11-12 06:10:43,033 - client__main__ - INFO - Init Message
+2018-11-12 06:10:43,033 - client__main__ - INFO - The user gives argument <arg:get> <operation:get> 
+2018-11-12 06:10:43,033 - client__main__ - INFO - Get operation starts
+2018-11-12 06:10:43,033 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:10:43,033 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:10:43,033 - client__main__ - INFO - request pickle ready
+2018-11-12 06:10:43,034 - client__main__ - INFO - request pickle send
+2018-11-12 06:10:43,034 - client__main__ - INFO - Request is send to server
+2018-11-12 06:10:43,034 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:10:43,077 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:10:43,078 - client__main__ - INFO - Message is received from server
+2018-11-12 06:10:43,078 - client__main__ - WARNING - Server progress err <server message: File doesn't found>
+2018-11-12 06:10:56,169 - client__main__ - INFO - Init Message
+2018-11-12 06:10:56,169 - client__main__ - INFO - The user gives argument <arg:list> <operation:list> 
+2018-11-12 06:10:56,169 - client__main__ - INFO - List operation starts
+2018-11-12 06:10:56,169 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:10:56,169 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:10:56,170 - client__main__ - INFO - request pickle ready
+2018-11-12 06:10:56,170 - client__main__ - INFO - request pickle send
+2018-11-12 06:10:56,170 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:10:56,215 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:10:56,215 - client__main__ - DEBUG - New directory is created (mzp7)
+2018-11-12 06:11:25,752 - client__main__ - INFO - Init Message
+2018-11-12 06:11:25,752 - client__main__ - INFO - The user gives argument <arg:put> <operation:put> 
+2018-11-12 06:11:25,752 - client__main__ - INFO - Put operation starts
+2018-11-12 06:11:25,752 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:11:25,753 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:11:27,083 - client__main__ - INFO - request pickle ready
+2018-11-12 06:11:27,083 - client__main__ - INFO - request pickle send
+2018-11-12 06:11:27,083 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:11:27,084 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:11:27,084 - client__main__ - DEBUG - Starting to read local file
+2018-11-12 06:11:27,406 - client__main__ - DEBUG - The local file was read
+2018-11-12 06:11:28,718 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:11:28,718 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:11:29,014 - client__main__ - INFO - request pickle ready
+2018-11-12 06:11:29,638 - client__main__ - INFO - request pickle send
+2018-11-12 06:11:29,671 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:11:31,475 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:11:31,475 - client__main__ - INFO - data transfer complete successfully
+2018-11-12 06:12:03,536 - client__main__ - INFO - Init Message
+2018-11-12 06:12:03,536 - client__main__ - INFO - The user gives argument <arg:put> <operation:put> 
+2018-11-12 06:12:03,536 - client__main__ - INFO - Put operation starts
+2018-11-12 06:12:03,536 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:12:03,537 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:12:04,876 - client__main__ - INFO - request pickle ready
+2018-11-12 06:12:04,876 - client__main__ - INFO - request pickle send
+2018-11-12 06:12:04,876 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:12:04,878 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:12:04,878 - client__main__ - DEBUG - Starting to read local file
+2018-11-12 06:12:05,196 - client__main__ - DEBUG - The local file was read
+2018-11-12 06:12:06,517 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:12:06,517 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:12:06,812 - client__main__ - INFO - request pickle ready
+2018-11-12 06:12:07,426 - client__main__ - INFO - request pickle send
+2018-11-12 06:12:07,457 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:12:10,197 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:12:10,197 - client__main__ - INFO - data transfer complete successfully
+2018-11-12 06:18:07,251 - client__main__ - INFO - Init Message
+2018-11-12 06:18:07,251 - client__main__ - INFO - The user gives argument <arg:put> <operation:put> 
+2018-11-12 06:18:07,251 - client__main__ - INFO - Put operation starts
+2018-11-12 06:18:07,251 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:18:07,252 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:18:08,513 - client__main__ - INFO - request pickle ready
+2018-11-12 06:18:08,513 - client__main__ - INFO - request pickle send
+2018-11-12 06:18:08,513 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:18:08,514 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:18:08,514 - client__main__ - DEBUG - Starting to read local file
+2018-11-12 06:18:08,828 - client__main__ - DEBUG - The local file was read
+2018-11-12 06:18:10,060 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:18:10,060 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:18:10,328 - client__main__ - INFO - request pickle ready
+2018-11-12 06:18:10,928 - client__main__ - INFO - request pickle send
+2018-11-12 06:18:10,958 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:18:12,869 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:18:12,869 - client__main__ - INFO - data transfer complete successfully
+2018-11-12 06:23:41,425 - client__main__ - INFO - Init Message
+2018-11-12 06:23:41,425 - client__main__ - INFO - The user gives argument <arg:put> <operation:put> 
+2018-11-12 06:23:41,425 - client__main__ - INFO - Put operation starts
+2018-11-12 06:23:41,425 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:23:41,425 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:23:42,671 - client__main__ - INFO - request pickle ready
+2018-11-12 06:23:42,671 - client__main__ - INFO - request pickle send
+2018-11-12 06:23:42,671 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:23:42,673 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:23:42,673 - client__main__ - INFO - There is no user directory
+2018-11-12 06:24:44,445 - client__main__ - INFO - Init Message
+2018-11-12 06:24:44,445 - client__main__ - INFO - The user gives argument <arg:list> <operation:list> 
+2018-11-12 06:24:44,445 - client__main__ - INFO - List operation starts
+2018-11-12 06:24:44,445 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:24:44,445 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:24:44,445 - client__main__ - INFO - request pickle ready
+2018-11-12 06:24:44,446 - client__main__ - INFO - request pickle send
+2018-11-12 06:24:44,446 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:24:44,483 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:24:44,484 - client__main__ - DEBUG - New directory is created (mzp7)
+2018-11-12 06:24:55,468 - client__main__ - INFO - Init Message
+2018-11-12 06:24:55,468 - client__main__ - INFO - The user gives argument <arg:list> <operation:list> 
+2018-11-12 06:24:55,468 - client__main__ - INFO - List operation starts
+2018-11-12 06:24:55,468 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:24:55,469 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:24:55,469 - client__main__ - INFO - request pickle ready
+2018-11-12 06:24:55,469 - client__main__ - INFO - request pickle send
+2018-11-12 06:24:55,469 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:24:55,508 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:24:55,509 - client__main__ - DEBUG - Directory is listed
+2018-11-12 06:25:03,317 - client__main__ - INFO - Init Message
+2018-11-12 06:25:03,317 - client__main__ - INFO - The user gives argument <arg:put> <operation:put> 
+2018-11-12 06:25:03,317 - client__main__ - INFO - Put operation starts
+2018-11-12 06:25:03,317 - client__main__ - WARNING - User argument is not a file
+2018-11-12 06:25:12,333 - client__main__ - INFO - Init Message
+2018-11-12 06:25:12,333 - client__main__ - INFO - The user gives argument <arg:put> <operation:put> 
+2018-11-12 06:25:12,333 - client__main__ - INFO - Put operation starts
+2018-11-12 06:25:12,333 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:25:12,333 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:25:13,605 - client__main__ - INFO - request pickle ready
+2018-11-12 06:25:13,605 - client__main__ - INFO - request pickle send
+2018-11-12 06:25:13,605 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:25:13,606 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:25:13,606 - client__main__ - DEBUG - Starting to read local file
+2018-11-12 06:25:13,926 - client__main__ - DEBUG - The local file was read
+2018-11-12 06:25:15,187 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:25:15,187 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:25:15,467 - client__main__ - INFO - request pickle ready
+2018-11-12 06:25:16,083 - client__main__ - INFO - request pickle send
+2018-11-12 06:25:16,116 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:25:17,855 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:25:17,855 - client__main__ - INFO - data transfer complete successfully
+2018-11-12 06:25:38,199 - client__main__ - INFO - Init Message
+2018-11-12 06:25:38,200 - client__main__ - INFO - The user gives argument <arg:put> <operation:put> 
+2018-11-12 06:25:38,200 - client__main__ - INFO - Put operation starts
+2018-11-12 06:25:38,200 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:25:38,200 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:25:39,475 - client__main__ - INFO - request pickle ready
+2018-11-12 06:25:39,475 - client__main__ - INFO - request pickle send
+2018-11-12 06:25:39,475 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:25:39,476 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:25:39,476 - client__main__ - DEBUG - Starting to read local file
+2018-11-12 06:25:39,790 - client__main__ - DEBUG - The local file was read
+2018-11-12 06:25:41,079 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:25:41,079 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:25:41,361 - client__main__ - INFO - request pickle ready
+2018-11-12 06:25:41,980 - client__main__ - INFO - request pickle send
+2018-11-12 06:25:42,013 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:25:43,962 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:25:43,962 - client__main__ - INFO - data transfer complete successfully
+2018-11-12 06:30:19,025 - client__main__ - INFO - Init Message
+2018-11-12 06:30:19,025 - client__main__ - INFO - The user gives argument <arg:put> <operation:put> 
+2018-11-12 06:30:19,025 - client__main__ - INFO - Put operation starts
+2018-11-12 06:30:19,025 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:30:19,026 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:30:20,296 - client__main__ - INFO - request pickle ready
+2018-11-12 06:30:20,296 - client__main__ - INFO - request pickle send
+2018-11-12 06:30:20,296 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:30:20,296 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:30:20,296 - client__main__ - ERROR - Unpickling Error
+2018-11-12 06:31:30,243 - client__main__ - INFO - Init Message
+2018-11-12 06:31:30,243 - client__main__ - INFO - The user gives argument <arg:put> <operation:put> 
+2018-11-12 06:31:30,243 - client__main__ - INFO - Put operation starts
+2018-11-12 06:31:30,244 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:31:30,244 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:31:31,511 - client__main__ - INFO - request pickle ready
+2018-11-12 06:31:31,511 - client__main__ - INFO - request pickle send
+2018-11-12 06:31:31,511 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:31:31,511 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:31:31,511 - client__main__ - ERROR - Unpickling Error
+2018-11-12 06:31:37,061 - client__main__ - INFO - Init Message
+2018-11-12 06:31:37,061 - client__main__ - INFO - The user gives argument <arg:put> <operation:put> 
+2018-11-12 06:31:37,061 - client__main__ - INFO - Put operation starts
+2018-11-12 06:31:37,061 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:31:37,061 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:31:38,306 - client__main__ - INFO - request pickle ready
+2018-11-12 06:31:38,306 - client__main__ - INFO - request pickle send
+2018-11-12 06:31:38,306 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:31:38,306 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:31:38,307 - client__main__ - ERROR - Unpickling Error
+2018-11-12 06:32:27,733 - client__main__ - INFO - Init Message
+2018-11-12 06:32:27,734 - client__main__ - INFO - The user gives argument <arg:put> <operation:put> 
+2018-11-12 06:32:27,734 - client__main__ - INFO - Put operation starts
+2018-11-12 06:32:27,734 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:32:27,734 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:32:28,998 - client__main__ - INFO - request pickle ready
+2018-11-12 06:32:28,998 - client__main__ - INFO - request pickle send
+2018-11-12 06:32:28,998 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:32:28,998 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:32:28,998 - client__main__ - ERROR - Unpickling Error
+2018-11-12 06:32:58,289 - client__main__ - INFO - Init Message
+2018-11-12 06:32:58,289 - client__main__ - INFO - The user gives argument <arg:put> <operation:put> 
+2018-11-12 06:32:58,289 - client__main__ - INFO - Put operation starts
+2018-11-12 06:32:58,289 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:32:58,290 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:32:59,560 - client__main__ - INFO - request pickle ready
+2018-11-12 06:32:59,560 - client__main__ - INFO - request pickle send
+2018-11-12 06:32:59,560 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:32:59,561 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:32:59,561 - client__main__ - DEBUG - Starting to read local file
+2018-11-12 06:32:59,875 - client__main__ - DEBUG - The local file was read
+2018-11-12 06:33:01,131 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:33:01,131 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:33:01,405 - client__main__ - INFO - request pickle ready
+2018-11-12 06:33:02,015 - client__main__ - INFO - request pickle send
+2018-11-12 06:33:02,047 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:33:04,228 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:33:04,228 - client__main__ - INFO - data transfer complete successfully
+2018-11-12 06:34:28,623 - client__main__ - INFO - Init Message
+2018-11-12 06:34:28,623 - client__main__ - INFO - The user gives argument <arg:put> <operation:put> 
+2018-11-12 06:34:28,623 - client__main__ - INFO - Put operation starts
+2018-11-12 06:34:28,623 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:34:28,624 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:34:29,877 - client__main__ - INFO - request pickle ready
+2018-11-12 06:34:29,877 - client__main__ - INFO - request pickle send
+2018-11-12 06:34:29,877 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:34:31,159 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:34:31,159 - client__main__ - INFO - The file already exists
+2018-11-12 06:35:07,383 - client__main__ - INFO - Init Message
+2018-11-12 06:35:07,383 - client__main__ - INFO - The user gives argument <arg:list> <operation:list> 
+2018-11-12 06:35:07,383 - client__main__ - INFO - List operation starts
+2018-11-12 06:35:07,383 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:35:07,383 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:35:07,383 - client__main__ - INFO - request pickle ready
+2018-11-12 06:35:07,383 - client__main__ - INFO - request pickle send
+2018-11-12 06:35:07,383 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:35:07,421 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:35:07,421 - client__main__ - DEBUG - Directory is listed
+2018-11-12 06:35:16,369 - client__main__ - INFO - Init Message
+2018-11-12 06:35:16,369 - client__main__ - INFO - The user gives argument <arg:del> <operation:del> 
+2018-11-12 06:35:16,369 - client__main__ - INFO - Del operation starts
+2018-11-12 06:35:17,643 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:35:17,643 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:35:17,643 - client__main__ - INFO - request pickle ready
+2018-11-12 06:35:17,643 - client__main__ - INFO - request pickle send
+2018-11-12 06:35:17,643 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:35:18,976 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:35:18,976 - client__main__ - INFO - Del operation ended successfully
+2018-11-12 06:35:54,474 - client__main__ - INFO - Init Message
+2018-11-12 06:35:54,474 - client__main__ - INFO - The user gives argument <arg:put> <operation:put> 
+2018-11-12 06:35:54,474 - client__main__ - INFO - Put operation starts
+2018-11-12 06:35:54,474 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:35:54,474 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:35:54,474 - client__main__ - INFO - request pickle ready
+2018-11-12 06:35:54,474 - client__main__ - INFO - request pickle send
+2018-11-12 06:35:54,474 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:35:54,511 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:35:54,511 - client__main__ - DEBUG - Starting to read local file
+2018-11-12 06:35:54,511 - client__main__ - DEBUG - The local file was read
+2018-11-12 06:35:54,511 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:35:54,511 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:35:54,511 - client__main__ - INFO - request pickle ready
+2018-11-12 06:35:54,512 - client__main__ - INFO - request pickle send
+2018-11-12 06:35:54,512 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:35:54,548 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:35:54,549 - client__main__ - INFO - data transfer complete successfully
+2018-11-12 06:36:08,451 - client__main__ - INFO - Init Message
+2018-11-12 06:36:08,451 - client__main__ - INFO - The user gives argument <arg:del> <operation:del> 
+2018-11-12 06:36:08,451 - client__main__ - INFO - Del operation starts
+2018-11-12 06:36:08,452 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:36:08,452 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:36:08,452 - client__main__ - INFO - request pickle ready
+2018-11-12 06:36:08,452 - client__main__ - INFO - request pickle send
+2018-11-12 06:36:08,452 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:36:08,489 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:36:08,489 - client__main__ - WARNING - Del operation ended with faliure <server message : MD5 check failed>
+2018-11-12 06:36:20,247 - client__main__ - INFO - Init Message
+2018-11-12 06:36:20,247 - client__main__ - INFO - The user gives argument <arg:get> <operation:get> 
+2018-11-12 06:36:20,247 - client__main__ - INFO - Get operation starts
+2018-11-12 06:36:20,247 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:36:20,247 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:36:20,247 - client__main__ - INFO - request pickle ready
+2018-11-12 06:36:20,247 - client__main__ - INFO - request pickle send
+2018-11-12 06:36:20,248 - client__main__ - INFO - Request is send to server
+2018-11-12 06:36:20,248 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:36:20,285 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:36:20,286 - client__main__ - INFO - Message is received from server
+2018-11-12 06:36:20,286 - client__main__ - INFO - File is transferred successfully
+2018-11-12 06:36:32,368 - client__main__ - INFO - Init Message
+2018-11-12 06:36:32,368 - client__main__ - INFO - The user gives argument <arg:del> <operation:del> 
+2018-11-12 06:36:32,368 - client__main__ - INFO - Del operation starts
+2018-11-12 06:36:32,368 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:36:32,368 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:36:32,368 - client__main__ - INFO - request pickle ready
+2018-11-12 06:36:32,368 - client__main__ - INFO - request pickle send
+2018-11-12 06:36:32,369 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:36:32,406 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:36:32,406 - client__main__ - INFO - Del operation ended successfully
+2018-11-12 06:38:47,753 - client__main__ - INFO - Init Message
+2018-11-12 06:38:47,753 - client__main__ - INFO - The user gives argument <arg:get> <operation:get> 
+2018-11-12 06:38:47,753 - client__main__ - INFO - Get operation starts
+2018-11-12 06:38:47,753 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:38:47,753 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:38:47,754 - client__main__ - INFO - request pickle ready
+2018-11-12 06:38:47,754 - client__main__ - INFO - request pickle send
+2018-11-12 06:38:47,754 - client__main__ - INFO - Request is send to server
+2018-11-12 06:38:47,754 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:38:47,791 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:38:47,791 - client__main__ - INFO - Message is received from server
+2018-11-12 06:38:47,791 - client__main__ - WARNING - Server progress err <server message: File doesn't found>
+2018-11-12 06:38:52,737 - client__main__ - INFO - Init Message
+2018-11-12 06:38:52,737 - client__main__ - INFO - The user gives argument <arg:put> <operation:put> 
+2018-11-12 06:38:52,737 - client__main__ - INFO - Put operation starts
+2018-11-12 06:38:52,737 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:38:52,737 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:38:52,761 - client__main__ - INFO - request pickle ready
+2018-11-12 06:38:52,761 - client__main__ - INFO - request pickle send
+2018-11-12 06:38:52,762 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:38:52,774 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:38:52,774 - client__main__ - DEBUG - Starting to read local file
+2018-11-12 06:38:52,780 - client__main__ - DEBUG - The local file was read
+2018-11-12 06:38:52,804 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:38:52,804 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:38:52,809 - client__main__ - INFO - request pickle ready
+2018-11-12 06:38:52,841 - client__main__ - INFO - request pickle send
+2018-11-12 06:38:52,842 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:38:52,880 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:38:52,881 - client__main__ - INFO - data transfer complete successfully
+2018-11-12 06:39:12,121 - client__main__ - INFO - Init Message
+2018-11-12 06:39:12,121 - client__main__ - INFO - The user gives argument <arg:del> <operation:del> 
+2018-11-12 06:39:12,122 - client__main__ - INFO - Del operation starts
+2018-11-12 06:39:12,163 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:39:12,164 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:39:12,164 - client__main__ - INFO - request pickle ready
+2018-11-12 06:39:12,164 - client__main__ - INFO - request pickle send
+2018-11-12 06:39:12,164 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:39:12,200 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:39:12,201 - client__main__ - WARNING - Del operation ended with faliure <server message : File sizes don't match>
+2018-11-12 06:39:21,833 - client__main__ - INFO - Init Message
+2018-11-12 06:39:21,833 - client__main__ - INFO - The user gives argument <arg:del> <operation:del> 
+2018-11-12 06:39:21,833 - client__main__ - INFO - Del operation starts
+2018-11-12 06:39:21,877 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:39:21,878 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:39:21,878 - client__main__ - INFO - request pickle ready
+2018-11-12 06:39:21,878 - client__main__ - INFO - request pickle send
+2018-11-12 06:39:21,878 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:39:21,914 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:39:21,914 - client__main__ - WARNING - Del operation ended with faliure <server message : File sizes don't match>
+2018-11-12 06:39:37,266 - client__main__ - INFO - Init Message
+2018-11-12 06:39:37,266 - client__main__ - INFO - The user gives argument <arg:put> <operation:put> 
+2018-11-12 06:39:37,266 - client__main__ - INFO - Put operation starts
+2018-11-12 06:39:37,266 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:39:37,267 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:39:37,310 - client__main__ - INFO - request pickle ready
+2018-11-12 06:39:37,311 - client__main__ - INFO - request pickle send
+2018-11-12 06:39:37,311 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:39:37,334 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:39:37,335 - client__main__ - DEBUG - Starting to read local file
+2018-11-12 06:39:37,345 - client__main__ - DEBUG - The local file was read
+2018-11-12 06:39:37,387 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:39:37,387 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:39:37,397 - client__main__ - INFO - request pickle ready
+2018-11-12 06:39:37,427 - client__main__ - INFO - request pickle send
+2018-11-12 06:39:37,429 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:39:37,504 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:39:37,504 - client__main__ - INFO - data transfer complete successfully
+2018-11-12 06:39:40,158 - client__main__ - INFO - Init Message
+2018-11-12 06:39:40,158 - client__main__ - INFO - The user gives argument <arg:del> <operation:del> 
+2018-11-12 06:39:40,158 - client__main__ - INFO - Del operation starts
+2018-11-12 06:39:40,201 - client__main__ - DEBUG - Socket successfully created
+2018-11-12 06:39:40,201 - client__main__ - DEBUG - Socket successfully connected
+2018-11-12 06:39:40,201 - client__main__ - INFO - request pickle ready
+2018-11-12 06:39:40,201 - client__main__ - INFO - request pickle send
+2018-11-12 06:39:40,201 - client__main__ - DEBUG - get_message function called
+2018-11-12 06:39:40,283 - client__main__ - DEBUG - Data transmission end
+2018-11-12 06:39:40,284 - client__main__ - INFO - Del operation ended successfully

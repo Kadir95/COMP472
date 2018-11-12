@@ -18,11 +18,16 @@ op_list = ["put", "get", "del", "list"]
 port = 8181
 host = "localhost"
 
+path = "/".join(os.path.realpath(__file__).split("/")[:-1]) + "/"
+
+if not os.path.isdir(path + "log"):
+    os.makedirs(path + "log")
+
 # Logging environment setup
 log = logging.getLogger("client" + __name__)
 log.setLevel(logging.DEBUG)
 
-log_fh = logging.FileHandler("client.log")
+log_fh = logging.FileHandler(path + "log/client.log")
 log_fh.setLevel(logging.DEBUG)
 
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -110,7 +115,7 @@ def put():
     request = {
         "op"        : "put_check",
         "username"  : getpass.getuser(),
-        "filename"  : os.path.splitext(sys.argv[2])[0],
+        "filename"  : pathlib.Path(sys.argv[2]).name,
         "md5"       : md5(sys.argv[2])
     }
 
