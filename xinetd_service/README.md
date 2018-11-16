@@ -57,3 +57,17 @@ put checks the local file and the uploaded file according to MD5. If they match,
 	total 6504
 	-rw-r--r-- 1 root root 6659919 Nov 12 05:04 test.data
 
+## Used Libraries
+The libraries that used in this project listed and explained in this section.
+
+#### logging
+Server and client side scripts write log files independently.
+
+Server script writes the log file in to <code>/unicorn_service/log/server.log</code> in the docker container.
+
+	$ sudo docker ps -a # to get name or ID of container
+	$ sudo docker exec <container ID or container name> cat /unicorn_service/log/server.log
+
+#### hashlib
+#### pickle
+
