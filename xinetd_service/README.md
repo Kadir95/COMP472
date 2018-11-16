@@ -68,6 +68,14 @@ Server script writes the log file in to <code>/unicorn_service/log/server.log</c
 	$ sudo docker ps -a # to get name or ID of container
 	$ sudo docker exec <container ID or container name> cat /unicorn_service/log/server.log
 
-#### hashlib
-#### pickle
+Client script writes the log file in to <code>./log/client.log</code> in your client script's location.
 
+#### hashlib
+Hashlib library is used for the MD5 checksum.
+
+Server and client side send MD5 checksum within the data itself and other side is check the data correctness.
+
+#### pickle
+Pickle library is used for data passing.
+
+Pickle makes a data structure into a binary file or bytes. Thus different type of data can be passed.
